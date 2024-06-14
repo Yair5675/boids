@@ -3,8 +3,6 @@
 
 ## Description
 
----
-
 This repository contains an implementation for the [Boids algorithm](https://en.wikipedia.org/wiki/Boids) - An algorithm
 designed to simulate (roughly) the flight and flocking patterns of birds.
 
@@ -12,7 +10,6 @@ This project uses the Rust Programming Language and the very, very comfortable a
 
 ## Examples from Project
 
----
 A simple video of the simulation with a small number of boids (80) circling a target:
 
 ![80 Boids marvelously circling a target](./assets/80_Boids_with_target.gif)
@@ -32,9 +29,10 @@ A simple video of the simulation with a small number of boids (80) circling a ta
 
 ![80 boids following the leader](./assets/simulation_leader.gif)
 
+---
+
 ## Project Features
 
----
 The project doesn't only simulate boids but also allows you to toggle some additional rules. The features for the users
 are:
 * **Toggle Wall Evasion** - By default the boids are instructed to get away from the walls of the screen.<br>
@@ -54,7 +52,6 @@ this behaviour off, the user should press the *L* key again.
 
 ## Basic Algorithm Overview
 
----
 In order to clarify those new to the algorithm, a "*boid*" is just an object with a position and velocity (and color, in
 our case) whose goal is to simulate a bird.<br>
 
@@ -93,7 +90,6 @@ differently colored boids will still try not to bump into each other.
 
 ## Installation
 
----
 ### Prerequisites
 Since this is a Rust project, you will obviously need [Rust](https://www.rust-lang.org/tools/install) installed on your
 computer. All other dependencies are specified in the `Cargo.toml` file, and rust will handle them.
@@ -140,7 +136,6 @@ cargo run --release
 
 ## Customization
 
----
 For anyone who wishes to tweak more values, I present: `constants.rs`. This file is located at the `boids/src` 
 directory and, as you might've imagined, holds the constants of the simulation.
 
