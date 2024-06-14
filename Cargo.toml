@@ -1,0 +1,10 @@
+[package]
+name = "boids"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8.5"
+ggez = "0.9.3"
+crossbeam = "0.8.4"
+ordered-float = "4.2.0"
